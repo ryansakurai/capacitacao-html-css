@@ -5,54 +5,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">    
     <title> The Coffee Foundation </title>
 </head>
 <body>
-    <header id="principal">
-        <img src="assets/logo.svg" alt="Logo laranja circular com o desenho minimalista de um café na cor preta">
-        <nav>
-            <ul>
-                <li>
-                    <a href="#beneficios"> Benefícios </a>
-                </li>
-                <li>
-                    <a href=""> Por que café? </a>
-                </li>
-                <li>
-                    <a href=""> Relatos dos amantes </a>
-                </li>
-            </ul>
-        </nav>
-        <button> Juntar-se </button>
-    </header>
-    <main>
-        <section id="banner">
-            <div>
-                <h1>
-                    Dormir é um fraco substituto para o café ;)
-                </h1>
-                <p>
-                    Afinal, sempre tem trabalho pra entregar no outro dia :D
-                </p>
-            </div>
-            <div>
-                <p>
-                    Mais de 1 bilhão de pessoas consomem esse líquido divino diariamente
-                </p>
-                <button> Junte-se a nós </button>
-            </div>
-        </section>
-        <section id="beneficios">
-            <header class="section-header">
-                <h2>
-                    Benefícios
-                </h2>
-                <p>
-                    Se bem que tomar café já é um benefício em si...
-                </p>
+    <section class="principal">
+        <div class="conteudo">
+            <header>
+                <img src="assets/logo.svg" alt="Logo laranja circular com o desenho minimalista de um café na cor preta">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#beneficios"> Benefícios </a>
+                        </li>
+                        <li>
+                            <a href="#por-que"> Por que café? </a>
+                        </li>
+                        <li>
+                            <a href="#relatos"> Relatos dos amantes </a>
+                        </li>
+                    </ul>
+                </nav>
+                <button> Juntar-se </button>
             </header>
-            <div>
-                <div class="card">
+            <div class="headline">
+                <div class="principal">
+                    <h1>
+                        DORMIR É UM FRACO SUBSTITUTO <br>
+                        PARA O CAFÉ ;)
+                    </h1>
+                    <p>
+                        Afinal, sempre tem trabalho pra entregar no outro dia :D
+                    </p>
+                </div>
+                <div class="com-botao">
+                    <p>
+                        Mais de 1 bilhão de pessoas consomem <br>
+                        esse líquido divino diariamente
+                    </p>
+                    <button> Junte-se a nós </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="secundaria" id="beneficios">
+        <header>
+            <h2>
+                Benefícios
+            </h2>
+            <p>
+                Se bem que tomar café já é um benefício em si...
+            </p>
+        </header>
+        <div class="conteudo">
+            <div class="card">
+                <div class="conteudo">
                     <h2>
                         Queima Calorias!
                     </h2>
@@ -61,7 +71,9 @@
                         Acelera o metabolismo e ajuda a emagrecer.
                     </p>
                 </div>
-                <div class="card">
+            </div>
+            <div class="card">
+                <div class="conteudo">
                     <h2>
                         Aumenta a Vida!
                     </h2>
@@ -70,7 +82,9 @@
                         Risco menor de morte por doenças.
                     </p>
                 </div>
-                <div class="card">
+            </div>
+            <div class="card">
+                <div class="conteudo">
                     <h2>
                         Memória forte!
                     </h2>
@@ -80,88 +94,88 @@
                     </p>
                 </div>
             </div>
-        </section>
-        <section id="por-que">
-            <header class="section-header">
-                <h2>
-                    Por que café?
-                </h2>
-                <p>
-                    Tirando os motivos óbvios: o sabor, o aroma, a textura...
-                </p>
-            </header>
-            <div id="motivos">
-                <div class="motivo">
-                    <h2 class="numero">
-                        1
-                    </h2>
-                    <h2>
-                        Cafeína é legal
-                    </h2>
-                    <ul>
-                        <li>
-                            Programar é uma tarefa que exige muito foco, concentração e paciência, pontos em que a cafeína contribui significativamente.
-                        </li>
-                    </ul>
-                </div>
-                <div class="motivo">
-                    <h2 class="numero">
-                        2
-                    </h2>
-                    <h2>
-                        Cultura
-                    </h2>
-                    <ul>
-                        <li>
-                            Em empresas, é comum ter cafeteiras e xícaras personalizadas, com sua linguagem de programação favorita. 
-                        </li>
-                        <li>
-                            Até Java (linguagem) foi nomeada graças à um café!
-                        </li>
-                    </ul>
-                </div>
-                <div class="motivo">
-                    <h2 class="numero">
-                        3
-                    </h2>
-                    <h2>
-                        <q> Uma representação da realidade... </q>
-                    </h2>
-                    <ul>
-                        <li>
-                            Em empresas, é comum ter cafeteiras e xícaras personalizadas, com sua linguagem de programação favorita. 
-                        </li>
-                        <li>
-                            Até Java (linguagem) foi nomeada graças à um café!
-                        </li>
-                    </ul>
-                    <img src="assets/quadrinho.jpg" alt="Quadrinho que representa um programador café para começar o dia bem, lembrando que é um programador, se frustrando e pegando outro café para começar o dia bem">
-                </div>
-            </div>
-        </section>
-        <section id="relatos">
-            <header>
-                <h2>
-                    Relatos dos amantes
-                </h2>
-                <p>
-                    <q> Eu acredito na supremacia do café! </q>
-                </p>
-            </header>
-            <div id="relatos">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis eum, at animi maxime inventore eius, soluta distinctio odio nesciunt, magni reprehenderit vero nemo deserunt? Voluptatum consequatur nulla dolore animi!
-            </div>
-        </section>
-        <section id="duvidas">
+        </div>
+    </section>
+    <section class="secundaria" id="por-que">
+        <header>
             <h2>
-                Ainda em dúvidas?
+                Por que café?
             </h2>
-            <button> Junte-se a nós </button>
-            <img src="assets/whatsapp.svg" alt="">
-        </section>
-    </main>
+            <p>
+                Tirando os motivos óbvios: o sabor, o aroma, a textura...
+            </p>
+        </header>
+        <div class="conteudo">
+            <div class="motivo">
+                <h2 class="numero">
+                    1
+                </h2>
+                <h2>
+                    Cafeína é legal
+                </h2>
+                <ul>
+                    <li>
+                        Programar é uma tarefa que exige muito foco, concentração e paciência, pontos em que a cafeína contribui significativamente.
+                    </li>
+                </ul>
+            </div>
+            <div class="motivo">
+                <h2 class="numero">
+                    2
+                </h2>
+                <h2>
+                    Cultura
+                </h2>
+                <ul>
+                    <li>
+                        Em empresas, é comum ter cafeteiras e xícaras personalizadas, com sua linguagem de programação favorita. 
+                    </li>
+                    <li>
+                        Até Java (linguagem) foi nomeada graças à um café!
+                    </li>
+                </ul>
+            </div>
+            <div class="motivo">
+                <h2 class="numero">
+                    3
+                </h2>
+                <h2>
+                    <q> Uma representação da realidade... </q>
+                </h2>
+                <ul>
+                    <li>
+                        Em empresas, é comum ter cafeteiras e xícaras personalizadas, com sua linguagem de programação favorita. 
+                    </li>
+                    <li>
+                        Até Java (linguagem) foi nomeada graças à um café!
+                    </li>
+                </ul>
+                <img src="assets/quadrinho.jpg" alt="Quadrinho que representa um programador café para começar o dia bem, lembrando que é um programador, se frustrando e pegando outro café para começar o dia bem">
+            </div>
+        </div>
+    </section>
+    <section class="secundaria" id="relatos">
+        <header>
+            <h2>
+                Relatos dos amantes
+            </h2>
+            <p>
+                <q> Eu acredito na supremacia do café! </q>
+            </p>
+        </header>
+        <div class="conteudo">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem corporis eum, at animi maxime inventore eius, soluta distinctio odio nesciunt, magni reprehenderit vero nemo deserunt? Voluptatum consequatur nulla dolore animi!
+        </div>
+    </section>
+    <section id="duvidas">
+        <h2>
+            Ainda em dúvidas?
+        </h2>
+        <button> Junte-se a nós </button>
+        <img src="assets/whatsapp.svg" alt="">
+    </section>
     <footer>
-        <div id="redes">
+        <div class="redes">
             <img src="assets/instagram.svg" alt="Logo do Instagram em preto">
             <img src="assets/facebook.svg" alt="Logo do Facebook em preto">
             <img src="assets/twitter.svg" alt="Logo do Twitter em preto">
