@@ -13,7 +13,7 @@
 }
 
 .background-degrade {
-    background-image: linear-gradient(45deg, #453535, #1D1D1D, #1B1717);
+    background-image: linear-gradient(45deg, #1B1717, #1D1D1D, #453535);
 }
 
 button {
