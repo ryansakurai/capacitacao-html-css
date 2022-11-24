@@ -1,7 +1,6 @@
 * {
     margin: 0px;
     padding: 0px;
-    size: 100% 100%;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     color: white;
@@ -132,28 +131,24 @@ section#beneficios .conteudo {
     background-color: #EFA331;
     border-radius: 8px;
     width: 300px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 50px;
 }
 
-div.card div.conteudo {
-    display: grid;
-    grid-template-areas: 
-        "titulo"
-        "icone"
-        "descricao";
+.card img {
+    display: block;
+    margin: 25px auto 40px auto;
+    height: 70px;
 }
 
-.card .conteudo h2 {
-    grid-area: titulo;
+.card p {
+    font-size: 25px;
+    font-weight: 400;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-.card .conteudo img {
-    grid-area: icone;
-}
-
-.card .conteudo p {
-    grid-area: descricao;
-}
-
-.card h2, .card p {
+.card * {
     color: black;
 }
