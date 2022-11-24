@@ -6,7 +6,13 @@
     color: white;
 }
 
-body {
+#whatsapp {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.background-degrade {
     background-image: linear-gradient(45deg, #453535, #1D1D1D, #1B1717);
 }
 
@@ -20,6 +26,11 @@ button {
     padding: 10px 20px;
 }
 
+button:hover {
+    background-color: #F2BD6C;
+    cursor: pointer;
+}
+
 section.principal {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("assets/banner-background.jpg");
     background-repeat: no-repeat;
@@ -29,7 +40,7 @@ section.principal {
 }
 
 section.principal div.conteudo {
-    margin: 20px 80px 20px;
+    margin: 30px 80px 20px;
     width: 100%;
     display: grid;
     grid-template-areas: 
@@ -46,7 +57,7 @@ section.principal header {
 }
 
 section.principal header img {
-    width: 50px;
+    width: 75px;
 }
 
 nav ul {
@@ -60,6 +71,10 @@ nav a {
     font-weight: 600;
     text-decoration: none;
     padding-right: 30px;
+}
+
+nav a:hover {
+    color: #F2BD6C;
 }
 
 section.principal div.headline {
@@ -111,8 +126,8 @@ section.secundaria .conteudo {
     grid-area: conteudo;
 }
 
-section.secundaria h2 {
-    font-size: 30px;
+section.secundaria > header > h2 {
+    font-size: 35px;
     margin-bottom: 20px;
 }
 
@@ -136,9 +151,13 @@ section#beneficios .conteudo {
     padding-top: 50px;
 }
 
+.card h2 {
+    font-size: 1.8rem;
+}
+
 .card img {
     display: block;
-    margin: 25px auto 40px auto;
+    margin: 40px auto 40px auto;
     height: 70px;
 }
 
@@ -151,4 +170,121 @@ section#beneficios .conteudo {
 
 .card * {
     color: black;
+}
+
+#por-que .conteudo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#por-que .motivo {
+    margin-top: 10px;
+}
+
+#por-que .motivo .titulo {
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+#por-que .motivo ul {
+    font-size: 25px;
+    padding-left: 30px;
+    padding-right: 30px;
+    list-style: none;
+}
+
+#por-que .motivo li {
+    margin-top: 30px;
+}
+
+#por-que .motivo li::before {
+    content: "•";
+    color: #EFA331;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em
+}
+
+#por-que .numero {
+    font-size: 50px;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 14px;
+    border-color: #EFA331;
+    height: 70px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+q {
+    font-style: italic;
+}
+
+#duvidas {
+    border-top: 5px solid white;
+    border-bottom: 5px solid white;
+    height: 50vh;
+    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+#duvidas h2 {
+    color: #EFA331;
+    font-size: 50px;
+    font-weight: 800;
+}
+
+footer {
+    height: 75vh;
+    background-image: url("assets/footer-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+}
+
+footer .redes {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer a {
+    background-color: #EFA331;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+footer a:hover {
+    background-color: #F2BD6C;
+}
+
+footer img {
+    width: 75px;
+}
+
+footer p {
+    background-color: #EFA331;
+    color: black;
+    font-size: 35px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 30px;
 }
