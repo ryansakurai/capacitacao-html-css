@@ -8,7 +8,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">    
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <title> The Coffee Foundation </title>
 </head>
 <body>
@@ -154,7 +155,46 @@
                 </p>
             </header>
             <div class="conteudo">
-                
+                <div class="slide">
+                    <div class="legenda">
+                        <img src="assets/arthur.png" alt="">
+                        <p class="nome">
+                            Arthur Nitto
+                        </p>
+                    </div>
+                    <p class="relato">
+                        <q> Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado. </q>
+                    </p>
+                </div>
+                <div class="slide">
+                    <div class="legenda">
+                        <img src="assets/marcelo.png" alt="">
+                        <p class="nome">
+                            Marcelo Pirro
+                        </p>
+                    </div>
+                    <p class="relato">
+                        <q> Minha relação com o café é tipo: 'eu cheguei em um ponto em que eu preciso do café pra funcionar'. Eu sinto muito essa vibe de que o café é o que 'starta' o me dia e me da energia pra fazer as paradas. </q>
+                    </p>
+                </div>
+                <div class="slide">
+                    <div class="legenda">
+                        <img src="assets/titi.png" alt="">
+                        <p class="nome">
+                            Thiago Proença
+                        </p>
+                    </div>
+                    <p class="relato">
+                        <q> Eu gosto da sensação de tranquilidade ao aproveitar uma boa xícara de café logo pela manhã, depois de uma boa noite de sono, antes de começar a correria do dia-a-dia. </q>
+                    </p>
+                </div>
+                <a class="seta" id="seta-esquerda" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="seta" id="seta-direita" onclick="plusSlides(1)">&#10095;</a>
+                <div class="bolinhas">
+                    <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="currentSlide(1)">
+                    <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="currentSlide(2)"">
+                    <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="currentSlide(3)"">
+                </div>
             </div>
         </section>
         <section id="duvidas">

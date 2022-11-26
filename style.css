@@ -223,6 +223,91 @@ q {
     font-style: italic;
 }
 
+#relatos .conteudo {
+    display: grid;
+    grid-template-areas: 
+        "quadro"
+        "bolinhas";
+}
+
+#relatos .slide {
+    display: none;
+    position: relative;
+    grid-area: quadro;
+    width: 625px;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#relatos .legenda {
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.legenda img {
+    width: 100px;
+}
+
+.legenda .nome {
+    font-size: 25px;
+    font-weight: 300;
+    margin-left: 30px;
+}
+
+#relatos .relato {
+    border-style: solid;
+    border-width: 4px;
+    border-color: #EFA331;
+    font-size: 27px;
+    font-weight: 300;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+#relatos .seta {
+    font-size: 50px;
+    align-self: center;
+    cursor: pointer;
+    position: absolute;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.seta:hover {
+    color: #EFA331;
+}
+
+#relatos #seta-esquerda {
+    left: 250px;
+}
+
+#relatos #seta-direita {
+    right: 250px;
+}
+
+#relatos .bolinhas {
+    grid-area: bolinhas;
+    display: flex;
+    justify-content: center;
+}
+
+.bolinhas .bolinha {
+    width: 35px;
+    margin: auto 25px;
+    cursor: pointer;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
 #duvidas {
     border-top: 5px solid white;
     border-bottom: 5px solid white;
