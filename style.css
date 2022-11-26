@@ -6,16 +6,6 @@
     color: white;
 }
 
-#whatsapp {
-    position: fixed;
-    bottom: 20px;
-    left: 20px;
-}
-
-.background-degrade {
-    background-image: linear-gradient(45deg, #1B1717, #1D1D1D, #453535);
-}
-
 button {
     background-color: #EFA331;
     color: white;
@@ -31,17 +21,25 @@ button:hover {
     cursor: pointer;
 }
 
-section.principal {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("assets/banner-background.jpg");
+q {
+    font-style: italic;
+}
+
+.whatsapp-logo {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+}
+
+.principal {
+    background-image: url("assets/banner-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 120vh;
-    display: flex;
-}
-
-section.principal div.conteudo {
-    margin: 30px 80px 20px;
-    width: 100%;
+    padding-top: 30px;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 20px;
     display: grid;
     grid-template-areas: 
         "header"
@@ -49,23 +47,23 @@ section.principal div.conteudo {
     grid-template-rows: 60px auto;
 }
 
-section.principal header {
+.logo-site {
+    width: 75px;
+}
+
+.principal-header {
     grid-area: header;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-section.principal header img {
-    width: 75px;
-}
-
-nav ul {
+.secoes {
     display: flex;
     list-style-type: none;
 }
 
-nav a {
+.secoes a {
     color: #EFA331;
     font-size: 25px;
     font-weight: 600;
@@ -73,11 +71,11 @@ nav a {
     padding-right: 30px;
 }
 
-nav a:hover {
+.secoes a:hover {
     color: #F2BD6C;
 }
 
-section.principal div.headline {
+.banner {
     grid-area: headline;
     display: flex;
     flex-direction: column;
@@ -93,21 +91,25 @@ h1 {
     font-weight: 800;
 }
 
-section.principal div.headline p {
+.banner p {
     font-size: 30px;
 }
 
-section.principal div.headline div.com-botao {
+.call-to-action {
     display: flex;
     flex-direction: row;
     justify-content: right;
 }
 
-section.principal div.headline div.com-botao button {
+.call-to-action button {
     margin-left: 30px;
 }
 
-section.secundaria {
+.background-degrade {
+    background-image: linear-gradient(45deg, #1B1717, #1D1D1D, #453535);
+}
+
+.secundaria {
     height: 110vh;
     padding: 80px 100px;
     text-align: center;
@@ -118,28 +120,21 @@ section.secundaria {
     grid-template-rows: 150px auto;
 }
 
-section.secundaria header {
+.secundaria-header {
     grid-area: header;
 }
 
-section.secundaria .conteudo {
-    grid-area: conteudo;
-}
-
-section.secundaria > header > h2 {
+.secundaria-header h2 {
     font-size: 35px;
     margin-bottom: 20px;
 }
 
-section.secundaria header p {
+.secundaria-header p {
     font-size: 25px;
 }
 
-section#beneficios .conteudo {
-    display: flex;
-    justify-content: space-between;
-    margin-left: 40px;
-    margin-right: 40px;
+.secundaria-conteudo {
+    grid-area: conteudo;
 }
 
 .card {
@@ -149,6 +144,10 @@ section#beneficios .conteudo {
     display: flex;
     flex-direction: column;
     padding-top: 50px;
+}
+
+.card * {
+    color: black;
 }
 
 .card h2 {
@@ -168,17 +167,33 @@ section#beneficios .conteudo {
     margin-right: 40px;
 }
 
-.card * {
-    color: black;
+#beneficios .secundaria-conteudo {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 40px;
+    margin-right: 40px;
 }
 
-#por-que .conteudo {
+#por-que .secundaria-conteudo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
 
 #por-que .motivo {
     margin-top: 10px;
+}
+
+#por-que .indice {
+    font-size: 50px;
+    font-weight: 600;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 14px;
+    border-color: #EFA331;
+    height: 70px;
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #por-que .motivo .titulo {
@@ -206,31 +221,14 @@ section#beneficios .conteudo {
     margin-left: -1em
 }
 
-#por-que .numero {
-    font-size: 50px;
-    font-weight: 600;
-    border-style: solid;
-    border-width: 5px;
-    border-radius: 14px;
-    border-color: #EFA331;
-    height: 70px;
-    width: 60px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-q {
-    font-style: italic;
-}
-
-#relatos .conteudo {
+#relatos .secundaria-conteudo {
     display: grid;
     grid-template-areas: 
         "quadro"
         "bolinhas";
 }
 
-#relatos .slide {
+.slide {
     display: none;
     position: relative;
     grid-area: quadro;
@@ -240,18 +238,18 @@ q {
     margin-right: auto;
 }
 
-#relatos .legenda {
+.slide .legenda {
     position: absolute;
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-.legenda img {
+.slide .legenda img {
     width: 100px;
 }
 
-.legenda .nome {
+.slide .legenda p {
     font-size: 25px;
     font-weight: 300;
     margin-left: 30px;
@@ -281,15 +279,15 @@ q {
     user-select: none; /* Standard syntax */
 }
 
-.seta:hover {
+#relatos .seta:hover {
     color: #EFA331;
 }
 
-#relatos #seta-esquerda {
+#relatos .seta-esquerda {
     left: 250px;
 }
 
-#relatos #seta-direita {
+#relatos .seta-direita {
     right: 250px;
 }
 
@@ -303,9 +301,9 @@ q {
     width: 35px;
     margin: auto 25px;
     cursor: pointer;
+    user-select: none;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
 }
 
 #duvidas {
@@ -365,7 +363,7 @@ footer img {
     width: 75px;
 }
 
-footer p {
+footer .autor {
     background-color: #EFA331;
     color: black;
     font-size: 35px;

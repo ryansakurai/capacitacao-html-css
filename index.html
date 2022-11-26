@@ -1,63 +1,65 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="shortcut icon" href="assets/logo.svg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
     <title> The Coffee Foundation </title>
 </head>
+
 <body>
     <a href="https://youtube.com/shorts/jQBSm5TEiMc?feature=share" target="_blank">
-        <img src="assets/whatsapp.svg" alt="Logo do Whatsapp" id="whatsapp">
+        <img class="whatsapp-logo" src="assets/whatsapp.svg" alt="Logo do Whatsapp">
     </a>
     <section class="principal">
-        <div class="conteudo">
-            <header>
-                <img src="assets/logo.svg" alt="Logo laranja circular com o desenho minimalista de um café na cor preta">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="#beneficios"> Benefícios </a>
-                        </li>
-                        <li>
-                            <a href="#por-que"> Por que café? </a>
-                        </li>
-                        <li>
-                            <a href="#relatos"> Relatos dos amantes </a>
-                        </li>
-                    </ul>
-                </nav>
-                <button> Juntar-se </button>
-            </header>
-            <div class="headline">
-                <div class="principal">
-                    <h1>
-                        DORMIR É UM FRACO SUBSTITUTO <br>
-                        PARA O CAFÉ ;)
-                    </h1>
-                    <p>
-                        Afinal, sempre tem trabalho pra entregar no outro dia :D
-                    </p>
-                </div>
-                <div class="com-botao">
-                    <p>
-                        Mais de 1 bilhão de pessoas consomem <br>
-                        esse líquido divino diariamente
-                    </p>
-                    <button> Junte-se a nós </button>
-                </div>
+        <header class="principal-header">
+            <img class="logo-site" src="assets/logo.svg" alt="Logo laranja circular com o desenho minimalista de um café na cor preta">
+            <nav>
+                <ul class="secoes">
+                    <li>
+                        <a href="#beneficios"> Benefícios </a>
+                    </li>
+                    <li>
+                        <a href="#por-que"> Por que café? </a>
+                    </li>
+                    <li>
+                        <a href="#relatos"> Relatos dos amantes </a>
+                    </li>
+                </ul>
+            </nav>
+            <button> Juntar-se </button>
+        </header>
+        <div class="banner">
+            <div class="banner-principal">
+                <h1>
+                    DORMIR É UM FRACO SUBSTITUTO <br>
+                    PARA O CAFÉ ;)
+                </h1>
+                <p>
+                    Afinal, sempre tem trabalho pra entregar no outro dia :D
+                </p>
+            </div>
+            <div class="call-to-action">
+                <p>
+                    Mais de 1 bilhão de pessoas consomem <br>
+                    esse líquido divino diariamente
+                </p>
+                <button> Junte-se a nós </button>
             </div>
         </div>
     </section>
     <div class="background-degrade">
         <section class="secundaria" id="beneficios">
-            <header>
+            <header class="secundaria-header">
                 <h2>
                     Benefícios
                 </h2>
@@ -65,7 +67,7 @@
                     Se bem que tomar café já é um benefício em si...
                 </p>
             </header>
-            <div class="conteudo">
+            <div class="secundaria-conteudo">
                 <div class="card">
                     <h2>
                         Queima Calorias!
@@ -96,7 +98,7 @@
             </div>
         </section>
         <section class="secundaria" id="por-que">
-            <header>
+            <header class="secundaria-header">
                 <h2>
                     Por que café?
                 </h2>
@@ -104,9 +106,9 @@
                     Tirando os motivos óbvios: o sabor, o aroma, a textura...
                 </p>
             </header>
-            <div class="conteudo">
+            <div class="secundaria-conteudo">
                 <div class="motivo">
-                    <h2 class="numero">
+                    <h2 class="indice">
                         1
                     </h2>
                     <h2 class="titulo">
@@ -119,7 +121,7 @@
                     </ul>
                 </div>
                 <div class="motivo">
-                    <h2 class="numero">
+                    <h2 class="indice">
                         2
                     </h2>
                     <h2 class="titulo">
@@ -135,7 +137,7 @@
                     </ul>
                 </div>
                 <div class="motivo">
-                    <h2 class="numero">
+                    <h2 class="indice">
                         3
                     </h2>
                     <h2 class="titulo">
@@ -146,7 +148,7 @@
             </div>
         </section>
         <section class="secundaria" id="relatos">
-            <header>
+            <header class="secundaria-header">
                 <h2>
                     Relatos dos amantes
                 </h2>
@@ -154,11 +156,11 @@
                     <q> Eu acredito na supremacia do café! </q>
                 </p>
             </header>
-            <div class="conteudo">
+            <div class="secundaria-conteudo">
                 <div class="slide">
                     <div class="legenda">
                         <img src="assets/arthur.png" alt="">
-                        <p class="nome">
+                        <p>
                             Arthur Nitto
                         </p>
                     </div>
@@ -169,7 +171,7 @@
                 <div class="slide">
                     <div class="legenda">
                         <img src="assets/marcelo.png" alt="">
-                        <p class="nome">
+                        <p>
                             Marcelo Pirro
                         </p>
                     </div>
@@ -180,7 +182,7 @@
                 <div class="slide">
                     <div class="legenda">
                         <img src="assets/titi.png" alt="">
-                        <p class="nome">
+                        <p>
                             Thiago Proença
                         </p>
                     </div>
@@ -188,8 +190,8 @@
                         <q> Eu gosto da sensação de tranquilidade ao aproveitar uma boa xícara de café logo pela manhã, depois de uma boa noite de sono, antes de começar a correria do dia-a-dia. </q>
                     </p>
                 </div>
-                <a class="seta" id="seta-esquerda" onclick="plusSlides(-1)">&#10094;</a>
-                <a class="seta" id="seta-direita" onclick="plusSlides(1)">&#10095;</a>
+                <a class="seta seta-esquerda"onclick="plusSlides(-1)">&#10094;</a>
+                <a class="seta seta-direita"onclick="plusSlides(1)">&#10095;</a>
                 <div class="bolinhas">
                     <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="currentSlide(1)">
                     <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="currentSlide(2)"">
@@ -216,9 +218,10 @@
                 <img src="assets/twitter.svg" alt="Logo do Twitter em preto">
             </a>
         </div>
-        <p>
+        <p class="autor">
             Desenvolvido por Beets Jr.
         </p>
     </footer>
 </body>
+
 </html>
