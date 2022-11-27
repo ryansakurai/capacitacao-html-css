@@ -107,6 +107,7 @@ h1 {
 
 .background-degrade {
     background-image: linear-gradient(45deg, #1B1717, #1D1D1D, #453535);
+    z-index: 0;
 }
 
 .secundaria {
@@ -172,6 +173,35 @@ h1 {
     justify-content: space-between;
     margin-left: 40px;
     margin-right: 40px;
+}
+
+#por-que {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#por-que * {
+    z-index: 2;
+}
+
+.texto-de-fundo {
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 100px;
+    margin-top: 200px;
+}
+
+#por-que .texto-de-fundo p {
+    font-family: 'Montaga', serif;
+    font-size: 250px;
+    color: rgba(255, 255, 255, 0.10);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
 }
 
 #por-que .secundaria-conteudo {
@@ -276,7 +306,7 @@ h1 {
     position: absolute;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
-    user-select: none; /* Standard syntax */
+    user-select: none;
 }
 
 #relatos .seta:hover {
