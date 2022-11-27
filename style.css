@@ -177,8 +177,6 @@ h1 {
 
 #por-que {
     position: relative;
-    display: flex;
-    flex-direction: column;
 }
 
 #por-que * {
