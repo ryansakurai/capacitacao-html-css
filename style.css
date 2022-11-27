@@ -299,6 +299,10 @@ h1 {
     margin-left: 30px;
 }
 
+#relatos .titi .relato {
+    padding-bottom: 63px;
+}
+
 #relatos .seta {
     font-size: 50px;
     align-self: center;

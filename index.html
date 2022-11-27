@@ -164,7 +164,7 @@
                 </p>
             </header>
             <div class="secundaria-conteudo">
-                <div class="slide">
+                <div class="slide arthur">
                     <div class="legenda">
                         <img src="assets/arthur.png" alt="">
                         <p>
@@ -175,7 +175,7 @@
                         <q> Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado. </q>
                     </p>
                 </div>
-                <div class="slide">
+                <div class="slide marcelo">
                     <div class="legenda">
                         <img src="assets/marcelo.png" alt="">
                         <p>
@@ -186,7 +186,7 @@
                         <q> Minha relação com o café é tipo: 'eu cheguei em um ponto em que eu preciso do café pra funcionar'. Eu sinto muito essa vibe de que o café é o que 'starta' o me dia e me da energia pra fazer as paradas. </q>
                     </p>
                 </div>
-                <div class="slide">
+                <div class="slide titi">
                     <div class="legenda">
                         <img src="assets/titi.png" alt="">
                         <p>
@@ -232,3 +232,41 @@
 </body>
 
 </html>
+
+// funcionamento dos slides
+<script>
+    let slideIndice = 1;
+    mostrarSlide(slideIndice);
+
+    // pelas setas
+    function avancarSlide(n) {
+        mostrarSlide(slideIndice += n);
+    }
+
+    // pelas bolinhas
+    function esteSlide(n) {
+        mostrarSlide(slideIndice = n);
+    }
+
+    function mostrarSlide(n) {
+        let i;
+        let slides = document.getElementsByClassName("slide");
+        let bolinhas = document.getElementsByClassName("bolinha");
+        if (n > slides.length){
+            slideIndice = 1
+        }
+        else if (n < 1){
+            slideIndice = slides.length
+        }
+
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < bolinhas.length; i++) {
+            bolinhas[i].className = bolinhas[i].className.replace(" active", "");
+        }
+
+        slides[slideIndice-1].style.display = "block";
+        bolinhas[slideIndice-1].className += " active";
+    }
+</script>
