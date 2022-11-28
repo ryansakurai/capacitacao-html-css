@@ -164,45 +164,39 @@
                 </p>
             </header>
             <div class="secundaria-conteudo">
-                <div class="slide arthur">
-                    <div class="legenda">
-                        <img src="assets/arthur.png" alt="">
-                        <p>
-                            Arthur Nitto
-                        </p>
-                    </div>
+                <fieldset class="slide arthur">
+                    <legend> Arthur Nitto </legend>
+                    <img src="assets/arthur.png" alt="">
                     <p class="relato">
                         <q> Como um ávido consumidor da bebida, gosto da sensação de euforia e prazer que se espalha pelo meu corpo toda vez que bebo café, além de me ajudar a não dormir durante noites que preciso ficar acordado. </q>
                     </p>
-                </div>
-                <div class="slide marcelo">
-                    <div class="legenda">
-                        <img src="assets/marcelo.png" alt="">
-                        <p>
-                            Marcelo Pirro
-                        </p>
-                    </div>
+                </fieldset>
+                <fieldset class="slide marcelo">
+                    <legend> Marcelo Pirro </legend>
+                    <img src="assets/marcelo.png" alt="">
                     <p class="relato">
                         <q> Minha relação com o café é tipo: 'eu cheguei em um ponto em que eu preciso do café pra funcionar'. Eu sinto muito essa vibe de que o café é o que 'starta' o me dia e me da energia pra fazer as paradas. </q>
                     </p>
-                </div>
-                <div class="slide titi">
-                    <div class="legenda">
-                        <img src="assets/titi.png" alt="">
-                        <p>
-                            Thiago Proença
-                        </p>
-                    </div>
+                </fieldset>
+                <fieldset class="slide titi">
+                    <legend> Thiago Proença </legend>
+                    <img src="assets/titi.png" alt="">
                     <p class="relato">
                         <q> Eu gosto da sensação de tranquilidade ao aproveitar uma boa xícara de café logo pela manhã, depois de uma boa noite de sono, antes de começar a correria do dia-a-dia. </q>
                     </p>
-                </div>
+                </fieldset>
                 <a class="seta seta-esquerda" onclick="avancarSlide(-1)"> &#10094; </a>
                 <a class="seta seta-direita" onclick="avancarSlide(1)"> &#10095; </a>
                 <div class="bolinhas">
-                    <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="esteSlide(1)">
-                    <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="esteSlide(2)"">
-                    <img class="bolinha" src="assets/cafe-slides.svg" alt="Ícone branco de uma caneca de café" onclick="esteSlide(3)"">
+                    <svg class="bolinha" onclick="esteSlide(1)" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.77778 0H5.55556V4.42019H2.77778V0ZM8.33333 0H11.1111V4.42019H8.33333V0ZM13.8889 0H16.6667V4.42019H13.8889V0ZM22.2222 10.3138H19.4444V8.84037C19.4444 8.4496 19.2981 8.07484 19.0376 7.79852C18.7772 7.52221 18.4239 7.36698 18.0556 7.36698H1.38889C1.02053 7.36698 0.667263 7.52221 0.406796 7.79852C0.146329 8.07484 0 8.4496 0 8.84037V23.5743C0 24.7466 0.438987 25.8709 1.22039 26.6999C2.00179 27.5288 3.0616 27.9945 4.16667 27.9945H15.2778C16.3828 27.9945 17.4427 27.5288 18.2241 26.6999C19.0055 25.8709 19.4444 24.7466 19.4444 23.5743H22.2222C23.7542 23.5743 25 22.2527 25 20.6275V13.2606C25 11.6354 23.7542 10.3138 22.2222 10.3138ZM19.4444 20.6275V13.2606H22.2222L22.225 20.6275H19.4444Z" fill="white"/>
+                    </svg>
+                    <svg class="bolinha" onclick="esteSlide(2)" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.77778 0H5.55556V4.42019H2.77778V0ZM8.33333 0H11.1111V4.42019H8.33333V0ZM13.8889 0H16.6667V4.42019H13.8889V0ZM22.2222 10.3138H19.4444V8.84037C19.4444 8.4496 19.2981 8.07484 19.0376 7.79852C18.7772 7.52221 18.4239 7.36698 18.0556 7.36698H1.38889C1.02053 7.36698 0.667263 7.52221 0.406796 7.79852C0.146329 8.07484 0 8.4496 0 8.84037V23.5743C0 24.7466 0.438987 25.8709 1.22039 26.6999C2.00179 27.5288 3.0616 27.9945 4.16667 27.9945H15.2778C16.3828 27.9945 17.4427 27.5288 18.2241 26.6999C19.0055 25.8709 19.4444 24.7466 19.4444 23.5743H22.2222C23.7542 23.5743 25 22.2527 25 20.6275V13.2606C25 11.6354 23.7542 10.3138 22.2222 10.3138ZM19.4444 20.6275V13.2606H22.2222L22.225 20.6275H19.4444Z" fill="white"/>
+                    </svg>
+                    <svg class="bolinha" onclick="esteSlide(3)" width="25" height="28" viewBox="0 0 25 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.77778 0H5.55556V4.42019H2.77778V0ZM8.33333 0H11.1111V4.42019H8.33333V0ZM13.8889 0H16.6667V4.42019H13.8889V0ZM22.2222 10.3138H19.4444V8.84037C19.4444 8.4496 19.2981 8.07484 19.0376 7.79852C18.7772 7.52221 18.4239 7.36698 18.0556 7.36698H1.38889C1.02053 7.36698 0.667263 7.52221 0.406796 7.79852C0.146329 8.07484 0 8.4496 0 8.84037V23.5743C0 24.7466 0.438987 25.8709 1.22039 26.6999C2.00179 27.5288 3.0616 27.9945 4.16667 27.9945H15.2778C16.3828 27.9945 17.4427 27.5288 18.2241 26.6999C19.0055 25.8709 19.4444 24.7466 19.4444 23.5743H22.2222C23.7542 23.5743 25 22.2527 25 20.6275V13.2606C25 11.6354 23.7542 10.3138 22.2222 10.3138ZM19.4444 20.6275V13.2606H22.2222L22.225 20.6275H19.4444Z" fill="white"/>
+                    </svg>
                 </div>
             </div>
         </section>
@@ -233,7 +227,7 @@
 
 </html>
 
-// funcionamento dos slides
+<!-- funcionamento dos slides -->
 <script>
     let slideIndice = 1;
     mostrarSlide(slideIndice);
@@ -263,10 +257,10 @@
             slides[i].style.display = "none";
         }
         for (i = 0; i < bolinhas.length; i++) {
-            bolinhas[i].className = bolinhas[i].className.replace(" active", "");
+            bolinhas[i].classList.remove("active")
         }
 
-        slides[slideIndice-1].style.display = "block";
-        bolinhas[slideIndice-1].className += " active";
+        slides[slideIndice-1].style.display = "flex";
+        bolinhas[slideIndice-1].classList.add("active")
     }
 </script>

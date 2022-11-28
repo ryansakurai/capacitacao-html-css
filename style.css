@@ -260,47 +260,39 @@ h1 {
 
 .slide {
     display: none;
+    border-color: #EFA331;
+    border-width: 4px;
+    border-style: solid;
     position: relative;
     grid-area: quadro;
     width: 625px;
-    height: 300px;
+    height: 310px;
+    margin-top: 10px;
     margin-left: auto;
     margin-right: auto;
 }
 
-.slide .legenda {
-    position: absolute;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-
-.slide .legenda img {
-    width: 100px;
-}
-
-.slide .legenda p {
+.slide legend {
+    text-align: left;
+    margin-left: 80px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 25px;
-    font-weight: 300;
-    margin-left: 30px;
 }
 
-#relatos .relato {
-    border-style: solid;
-    border-width: 4px;
-    border-color: #EFA331;
+.slide img {
+    position: absolute;
+    width: 85px;
+    left: -20px;
+    top: -55px;
+}
+
+.slide p {
+    margin: auto;
+    margin-left: 40px;
+    margin-right: 40px;
     font-size: 27px;
     font-weight: 300;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 50px;
-    padding-bottom: 30px;
-    margin-top: 50px;
-    margin-left: 30px;
-}
-
-#relatos .titi .relato {
-    padding-bottom: 63px;
 }
 
 #relatos .seta {
@@ -332,12 +324,25 @@ h1 {
 }
 
 .bolinhas .bolinha {
-    width: 35px;
+    transform: scale(1.25);
     margin: auto 25px;
+    margin-bottom: 40px;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
+}
+
+.bolinha path {
+    fill: white;
+}
+
+.bolinha:hover path {
+    fill: #F2BD6C;
+}
+
+.active path {
+    fill: #EFA331;
 }
 
 #duvidas {
