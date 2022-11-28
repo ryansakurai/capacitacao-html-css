@@ -49,7 +49,7 @@ q {
 }
 
 .logo-site {
-    width: 75px;
+    transform: scale(1.25);
 }
 
 .principal-header {
@@ -60,6 +60,7 @@ q {
 }
 
 .secoes {
+    margin-left: 90px;
     display: flex;
     list-style-type: none;
 }
@@ -120,7 +121,7 @@ h1 {
     grid-template-areas: 
         "header"
         "conteudo";
-    grid-template-rows: 150px auto;
+    grid-template-rows: 175px auto;
 }
 
 .secundaria-header {
@@ -278,6 +279,7 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 25px;
+    font-weight: 300;
 }
 
 .slide img {
@@ -326,7 +328,6 @@ h1 {
 .bolinhas .bolinha {
     transform: scale(1.25);
     margin: auto 25px;
-    margin-bottom: 40px;
     cursor: pointer;
     user-select: none;
     -webkit-user-select: none; /* Safari */
