@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montaga&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title> The Coffee Foundation </title>
@@ -231,40 +232,8 @@
 
 </html>
 
-<!-- funcionamento dos slides -->
+<!-- slides automáticos -->
 <script>
-    let slideIndice = 1;
-    mostrarSlide(slideIndice);
-
-    // pelas setas
-    function avancarSlide(n) {
-        mostrarSlide(slideIndice += n);
-    }
-
-    // pelas bolinhas
-    function esteSlide(n) {
-        mostrarSlide(slideIndice = n);
-    }
-
-    function mostrarSlide(n) {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let bolinhas = document.getElementsByClassName("bolinha");
-        if (n > slides.length){
-            slideIndice = 1
-        }
-        else if (n < 1){
-            slideIndice = slides.length
-        }
-
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < bolinhas.length; i++) {
-            bolinhas[i].classList.remove("active")
-        }
-
-        slides[slideIndice-1].style.display = "flex";
-        bolinhas[slideIndice-1].classList.add("active")
-    }
+    esteSlide(1);
+    setInterval(avancarSlide, 7000, 1);
 </script>
