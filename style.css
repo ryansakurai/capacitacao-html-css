@@ -261,6 +261,16 @@ h1 {
         "bolinhas";
 }
 
+.fade {
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+@keyframes fade {
+    from {opacity: 0.5}
+    to {opacity: 250ms}
+}
+
 .slide {
     display: none;
     border-color: #EFA331;
