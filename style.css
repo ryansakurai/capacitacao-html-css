@@ -14,6 +14,7 @@ button {
     font-weight: bold;
     font-size: 30px;
     padding: 10px 20px;
+    transition: 150ms;
 }
 
 button:hover {
@@ -71,6 +72,7 @@ q {
     font-weight: 600;
     text-decoration: none;
     padding-right: 30px;
+    transition: 150ms;
 }
 
 .secoes a:hover {
@@ -305,6 +307,7 @@ h1 {
     -webkit-user-select: none; /* Safari */
     -ms-user-select: none; /* IE 10 and IE 11 */
     user-select: none;
+    transition: 150ms;
 }
 
 #relatos .seta:hover {
@@ -336,6 +339,7 @@ h1 {
 
 .bolinha path {
     fill: white;
+    transition: 150ms;
 }
 
 .bolinha:hover path {
@@ -393,6 +397,7 @@ footer a {
     justify-content: center;
     margin-left: 50px;
     margin-right: 50px;
+    transition: 150ms;
 }
 
 footer a:hover {
